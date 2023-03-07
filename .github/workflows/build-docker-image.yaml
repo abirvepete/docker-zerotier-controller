@@ -12,7 +12,7 @@ on:
 jobs:
   build:
     name: 'Build docker image'
-    runs-on: centos8-latest
+    runs-on: ubuntu-latest
 
     # Use the Bash shell regardless whether the GitHub Actions runner is ubuntu-latest, macos-latest, or windows-latest
     defaults:
