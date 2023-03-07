@@ -45,5 +45,5 @@ jobs:
       with:
         context: .
         push: true
-        tags: abirve/zerotier-controller:latest
+        tags: abirve/zerotier-controller:stable
     
