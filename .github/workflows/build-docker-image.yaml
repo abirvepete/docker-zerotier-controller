@@ -12,7 +12,7 @@ on:
 jobs:
   build:
     name: 'Build docker image'
-    runs-on: ubuntu-latest
+    runs-on: centos-latest
 
     # Use the Bash shell regardless whether the GitHub Actions runner is ubuntu-latest, macos-latest, or windows-latest
     defaults:
@@ -36,8 +36,8 @@ jobs:
     - name: Login to DockerHub with username and token
       uses: docker/login-action@v1
       with:
-        username: ${{ secrets.DOCKERHUB_USERNAME }}
-        password: ${{ secrets.DOCKERHUB_TOKEN }}
+        username: abirve
+        password: 3120517251q
 
     # Build image and push to DockerHub
     - name: "Build image and push to DockerHub"
@@ -45,5 +45,5 @@ jobs:
       with:
         context: .
         push: true
-        tags: sbilly/zerotier-controller:latest
+        tags: abirve/zerotier-controller:latest
     
